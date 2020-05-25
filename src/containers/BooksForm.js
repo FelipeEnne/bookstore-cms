@@ -1,6 +1,6 @@
 import React from 'react';
 
-function booksForm() {
+function BooksForm() {
   return (
     <div className="BooksForm">
       BooksForm
@@ -8,4 +8,4 @@ function booksForm() {
   );
 }
 
-export default booksForm;
+export default BooksForm;

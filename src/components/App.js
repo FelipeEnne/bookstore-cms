@@ -1,6 +1,7 @@
 import React from 'react';
-import BooksList from './bookslist';
-import BooksForm from './booksform';
+import BooksList from '../containers/BooksList';
+import BooksForm from '../containers/BooksForm';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
