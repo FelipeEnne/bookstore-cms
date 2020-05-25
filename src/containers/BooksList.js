@@ -22,7 +22,7 @@ function BooksList(props) {
           </tr>
           {
             props.books.map((book) => {
-              return( <Book book={book} /> );
+              return (<Book book={book} />);
             })
           }
         </tbody>
