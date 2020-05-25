@@ -1,6 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
+const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
+
 const BooksForm = ({ books }) => (
   <div className="BooksForm">
 
@@ -13,13 +15,15 @@ const BooksForm = ({ books }) => (
       <div class="form-group col-md-4">
         <label for="inputCategory">Category</label>
         <select id="inputCategory" class="form-control">
-          <option>Action</option>
-          <option>Biography</option>
-          <option>History</option>
-          <option>Horror</option>
-          <option>Kids</option>
-          <option>Learning</option>
-          <option>Sci-Fi</option>
+        {categories.map(category => (
+        <option
+          key={categories}
+          value={categories}
+          defaultValue
+        >
+          {categories}
+        </option>
+      ))}
         </select>
       </div>
     </div>
