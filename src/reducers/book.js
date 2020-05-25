@@ -7,16 +7,16 @@ const bookStore = (state = [], action) => {
       return [
         ...state,
         {
-          id: action.id,
-          title: action.title,
+          id: action.book.id,
+          title: action.book.title,
           category: action.category,
         },
       ];
 
     case 'REMOVE_BOOK ':
       return [
-        ...state.slice(0, action.index),
-        ...state.slice(action.index + 1, state.length),
+        ...state.slice(0, action.book.index),
+        ...state.slice(action.book.index + 1, state.length),
       ];
 
     default:

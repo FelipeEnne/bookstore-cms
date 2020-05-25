@@ -6,17 +6,24 @@ import './index.css';
 import App from './components/App';
 import books from './reducers/index';
 
+const generateID = () => Math.floor(Math.random() * 100);
+
 const initialState = {
   books: [
     {
-      id: 1,
+      id: generateID(),
       title: 'Title1',
-      category: 'Category1',
+      category: 'History',
     },
     {
-      id: 2,
+      id: generateID(),
       title: 'Title2',
-      category: 'Category2',
+      category: 'Biography',
+    },
+    {
+      id: generateID(),
+      title: 'Title3',
+      category: 'Learning',
     },
   ],
 };
