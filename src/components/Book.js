@@ -1,14 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Book(props) {
-  const { id, title, category } = props.book;
+function Book({ books }) {
 
   return (
     <tr>
-      <th>{id}</th>
-      <td>{title}</td>
-      <td>{category}</td>
+      <th>{books.id}</th>
+      <td>{books.title}</td>
+      <td>{books.category}</td>
     </tr>
   );
 }
