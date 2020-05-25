@@ -1,21 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Book({ books }) {
+const Book = ({ book }) => (
+  <tr>
+    <th>{book.id}</th>
+    <td>{book.title}</td>
+    <td>{book.category}</td>
+  </tr>
+);
 
-  return (
-    <tr>
-      <th>{books.id}</th>
-      <td>{books.title}</td>
-      <td>{books.category}</td>
-    </tr>
-  );
-}
 
 Book.propTypes = {
-  id: PropTypes.number.isRequired,
-  title: PropTypes.string.isRequired,
-  category: PropTypes.string.isRequired,
+  book: PropTypes.shape({
+    id: PropTypes.number,
+    title: PropTypes.string,
+    category: PropTypes.string,
+  }).isRequired,
 };
 
 
