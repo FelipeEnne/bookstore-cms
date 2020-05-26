@@ -41,7 +41,7 @@ class BooksForm extends Component {
           <div className="form-row">
             <div className="form-group col-md-6">
               <h5>Title</h5>
-              <input type="text" className="form-control" id="inputTitle" name="title" onChange={this.handleChange} required/>
+              <input type="text" className="form-control" id="inputTitle" name="title" onChange={this.handleChange} required />
             </div>
             <div className="form-group col-md-4">
               <h5>Category</h5>
