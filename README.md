@@ -16,6 +16,17 @@
 - Create a react app with create-react-app;
 - Delete the unnecessary file and assets;
 - Add the prop-types, react-redux end redux;
+- deploy the app to Heroku.
+
+### Components and Redux store
+
+- Prepare the directory structure;
+- Implement the App component;
+- Implement the BooksList componen;
+- Implement the Book component;
+- Implement the BooksForm component;
+- Define the Redux actions and reducers;
+- Initialize the Redux store.
 
 ### Built With
 
