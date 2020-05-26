@@ -9,7 +9,7 @@ const bookStore = (state = [], action) => {
         {
           id: action.book.id,
           title: action.book.title,
-          category: action.category,
+          category: action.book.category,
         },
       ];
 
