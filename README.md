@@ -28,6 +28,11 @@
 - Define the Redux actions and reducers;
 - Initialize the Redux store.
 
+### Interactive form
+
+- Make the BooksForm component stateful;
+- Connect the REMOVE_BOOK action to the component.
+
 ### Built With
 
 - Node.js

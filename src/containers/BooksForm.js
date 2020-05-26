@@ -26,18 +26,23 @@ class BooksForm extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    const { createBook } = this.props;
-    const book = { ...this.state, id: generateID() };
-    createBook(book);
-    // console.log(book);
-    this.setState({ title: '', category: 'Action' });
+    const t = document.getElementById('inputTitle').value;
+    if (t !== '') {
+      const { createBook } = this.props;
+      const book = { ...this.state, id: generateID() };
+      createBook(book);
+      document.getElementById('bookStoreForm').reset();
+      this.setState({ title: '', category: 'Action' });
+    } else {
+      console.error('The title is empty');
+    }
   }
 
   render() {
     return (
       <div className="BooksForm">
 
-        <form>
+        <form id="bookStoreForm">
           <div className="form-row">
             <div className="form-group col-md-6">
               <h5>Title</h5>
