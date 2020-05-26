@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 
-
 const bookStore = (state = [], action) => {
   switch (action.type) {
     case 'CREATE_BOOK':
@@ -13,10 +12,10 @@ const bookStore = (state = [], action) => {
         },
       ];
 
-    case 'REMOVE_BOOK ':
+    case 'REMOVE_BOOK':
       return [
-        ...state.slice(0, action.book.index),
-        ...state.slice(action.book.index + 1, state.length),
+        ...state.slice(0, action.bookIndex),
+        ...state.slice(action.bookIndex + 1, state.length),
       ];
 
     default:

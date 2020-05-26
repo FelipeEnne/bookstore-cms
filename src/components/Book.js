@@ -6,7 +6,7 @@ const Book = ({ book, handleRemoveBook }) => (
     <th>{book.id}</th>
     <td>{book.title}</td>
     <td>{book.category}</td>
-    <td><button type="button" onClick={handleRemoveBook}>Remove Book</button></td>
+    <td><button type="button" onClick={handleRemoveBook} className="btn btn-danger">Remove Book</button></td>
   </tr>
 );
 

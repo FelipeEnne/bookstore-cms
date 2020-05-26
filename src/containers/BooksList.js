@@ -12,7 +12,9 @@ class BooksList extends Component {
 
   handleRemoveBook(book) {
     const { removeBook } = this.props;
-    removeBook(book);
+    const s = this.props;
+    const bookIndex = (s.books).findIndex(x => x === book);
+    removeBook(bookIndex);
   }
 
   render() {

@@ -29,7 +29,7 @@ class BooksForm extends Component {
     const { createBook } = this.props;
     const book = { ...this.state, id: generateID() };
     createBook(book);
-    //console.log(book);
+    // console.log(book);
     this.setState({ title: '', category: 'Action' });
   }
 
