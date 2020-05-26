@@ -8,4 +8,4 @@ const removeBook = book => ({
   book,
 });
 
-export default { createBook, removeBook };
+export { createBook, removeBook };

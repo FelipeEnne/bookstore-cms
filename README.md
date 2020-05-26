@@ -22,7 +22,7 @@
 
 - Prepare the directory structure;
 - Implement the App component;
-- Implement the BooksList componen;
+- Implement the BooksList component;
 - Implement the Book component;
 - Implement the BooksForm component;
 - Define the Redux actions and reducers;
