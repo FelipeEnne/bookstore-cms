@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Book from '../components/Book';
-import CategoryFilter from "../components/CategoryFilter";
+import CategoryFilter from '../components/CategoryFilter';
 import { removeBook, changeFilter } from '../actions/index';
 
 
@@ -23,7 +23,6 @@ class BooksList extends Component {
   handleFilterChange(e) {
     const filter = e.target.value;
     const { changeFilter } = this.props;
-    console.log(filter);
     changeFilter(filter);
   }
 
