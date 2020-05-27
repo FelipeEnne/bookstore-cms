@@ -33,6 +33,12 @@
 - Make the BooksForm component stateful;
 - Connect the REMOVE_BOOK action to the component.
 
+### Category filter
+
+- Enhance the Redux store;
+- Implement the CategoryFilter component;
+- Keep the filter value in the Redux store.
+
 ### Built With
 
 - Node.js
