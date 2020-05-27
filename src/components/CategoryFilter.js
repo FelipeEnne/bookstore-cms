@@ -6,7 +6,7 @@ const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learnin
 function CategoryFilter(props) {
   return (
     <select name="category" onChange={e => props.handleChange(e)}>
-      <option value="">ALL</option>
+      <option value="All">All</option>
       {categories.map(category => (
         <option key={category} value={category}>
           {category}
