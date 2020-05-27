@@ -22,11 +22,16 @@
 
 - Prepare the directory structure;
 - Implement the App component;
-- Implement the BooksList componen;
+- Implement the BooksList component;
 - Implement the Book component;
 - Implement the BooksForm component;
 - Define the Redux actions and reducers;
 - Initialize the Redux store.
+
+### Interactive form
+
+- Make the BooksForm component stateful;
+- Connect the REMOVE_BOOK action to the component.
 
 ### Built With
 
