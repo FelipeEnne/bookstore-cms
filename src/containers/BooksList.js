@@ -30,37 +30,26 @@ class BooksList extends Component {
 
     let filterCategory;
 
-    if (filter === 'All') {
+    if (filter === 'CATEGORIES') {
       filterCategory = books;
     } else {
       filterCategory = books.filter(book => book.category === filter);
     }
 
     return (
-      <div className="">
-        <h2 className="nav-title">BookStore-CMS</h2>
-        <div className="">
+      <div className="nav-bar">
+        <div className="nav-app">
+          <h2 className="nav-title">BookStore-CMS</h2>
+          <h3 className="nav-books">BOOKS</h3>
           <CategoryFilter handleChange={this.handleFilterChange} />
-          <table className="table">
-            <thead className="thead-dark">
-              <tr>
-                <th scope="col">Book ID</th>
-                <th scope="col">Title</th>
-                <th scope="col">Category</th>
-                <th scope="col">Delete</th>
-              </tr>
-            </thead>
-            <tbody>
-              {filterCategory.map(book => (
-                <Book
-                  key={book.id}
-                  book={book}
-                  handleRemoveBook={() => this.handleRemoveBook(book)}
-                />
-              ))}
-            </tbody>
-          </table>
         </div>
+        {filterCategory.map(book => (
+          <Book
+            key={book.id}
+            book={book}
+            handleRemoveBook={() => this.handleRemoveBook(book)}
+          />
+        ))}
       </div>
     );
   }
