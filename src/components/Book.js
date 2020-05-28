@@ -8,7 +8,7 @@ const Book = ({ book, handleRemoveBook }) => (
       <div className="container-booksCategory">{book.category}</div>
     </div>
     <div className="container-removeButton">
-      <button type="button" onClick={handleRemoveBook} className="btn btn-outline-danger">Remove Book</button>
+      <button type="button" onClick={handleRemoveBook} className="btn btn-primary">Remove Book</button>
     </div>
   </div>
 );
