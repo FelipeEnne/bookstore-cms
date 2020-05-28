@@ -1,10 +1,13 @@
 body {
+  padding: 0;
   margin: 0;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f6fa ;
 }
 
 code {
@@ -12,10 +15,34 @@ code {
     monospace;
 }
 
+.App {
+  width: 80%;
+  margin: 3rem auto;
+  background-color: #fafafa;;
+  box-shadow: 0 2px 5px 2px rgba(#121212, .2);
+}
+
+.navBar {
+  background-color: #fff;
+  padding: 2rem 1rem;
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  border-bottom: 1px solid #e8e8e8;
+}
+
 .BooksForm {
   padding: 15px;
 }
 
-.selectCategory {
-  margin: 20px;
+.nav-title {
+  width: 240px;
+  height: 37px;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0290ff;
 }

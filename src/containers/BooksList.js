@@ -5,7 +5,6 @@ import Book from '../components/Book';
 import CategoryFilter from '../components/CategoryFilter';
 import { removeBook, changeFilter } from '../actions/index';
 
-
 class BooksList extends Component {
   constructor(props) {
     super(props);
@@ -16,7 +15,7 @@ class BooksList extends Component {
   handleRemoveBook(book) {
     const { removeBook } = this.props;
     const s = this.props;
-    const bookIndex = (s.books).findIndex(x => x === book);
+    const bookIndex = s.books.findIndex(x => x === book);
     removeBook(bookIndex);
   }
 
@@ -38,27 +37,30 @@ class BooksList extends Component {
     }
 
     return (
-      <div className="BooksList">
-        <CategoryFilter handleChange={this.handleFilterChange} />
-        <table className="table">
-          <thead className="thead-dark">
-            <tr>
-              <th scope="col">Book ID</th>
-              <th scope="col">Title</th>
-              <th scope="col">Category</th>
-              <th scope="col">Delete</th>
-            </tr>
-          </thead>
-          <tbody>
-            {filterCategory.map(book => (
-              <Book
-                key={book.id}
-                book={book}
-                handleRemoveBook={() => this.handleRemoveBook(book)}
-              />
-            ))}
-          </tbody>
-        </table>
+      <div className="">
+        <h2 className="nav-title">BookStore-CMS</h2>
+        <div className="">
+          <CategoryFilter handleChange={this.handleFilterChange} />
+          <table className="table">
+            <thead className="thead-dark">
+              <tr>
+                <th scope="col">Book ID</th>
+                <th scope="col">Title</th>
+                <th scope="col">Category</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              {filterCategory.map(book => (
+                <Book
+                  key={book.id}
+                  book={book}
+                  handleRemoveBook={() => this.handleRemoveBook(book)}
+                />
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
     );
   }
