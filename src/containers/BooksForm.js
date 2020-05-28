@@ -57,7 +57,7 @@ class BooksForm extends Component {
                 ))}
               </select>
             </div>
-            <button type="submit" className="btn btn-primary" onClick={this.handleSubmit}>Submit</button>
+            <button type="submit" className="btn btn-primary add-book" onClick={this.handleSubmit}>ADD BOOK</button>
           </div>
         </form>
 
