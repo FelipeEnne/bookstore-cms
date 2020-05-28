@@ -42,15 +42,13 @@ class BooksForm extends Component {
   render() {
     return (
       <div className="BooksForm">
-
+        <h5>ADD NEW BOOK</h5>
         <form id="bookStoreForm">
           <div className="form-row">
             <div className="form-group col-md-6">
-              <h5>Title</h5>
               <input type="text" className="form-control" id="inputTitle" name="title" onChange={this.handleChange} required />
             </div>
             <div className="form-group col-md-4">
-              <h5>Category</h5>
               <select id="inputCategory" className="form-control" name="category" onChange={this.handleChange}>
                 {categories.map(category => (
                   <option key={category} value={category}>
@@ -59,8 +57,8 @@ class BooksForm extends Component {
                 ))}
               </select>
             </div>
+            <button type="submit" className="btn btn-primary" onClick={this.handleSubmit}>Submit</button>
           </div>
-          <button type="submit" className="btn btn-primary" onClick={this.handleSubmit}>Submit</button>
         </form>
 
       </div>

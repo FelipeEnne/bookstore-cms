@@ -37,7 +37,7 @@ class BooksList extends Component {
     }
 
     return (
-      <div className="nav-bar">
+      <div>
         <div className="nav-app">
           <h2 className="nav-title">BookStore-CMS</h2>
           <h3 className="nav-books">BOOKS</h3>

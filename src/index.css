@@ -72,14 +72,14 @@ body {
   justify-content: space-between;
 }
 
-.container-booksTitle {
+.container-booksCategory {
   color: #888888;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: bold;
 }
 
-.container-booksCategory {
+.container-booksTitle {
   color: #121212;
   font-family: RobotoSlab,'Montserrat', sans-serif;
   font-size: 20px;
@@ -103,3 +103,21 @@ body {
   text-align: center;
   color: #ffffff;
 }
+
+.BooksForm form {
+  margin: auto;
+}
+
+h5 {
+  width: 174px;
+  height: 24px;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888888;
+}
+
