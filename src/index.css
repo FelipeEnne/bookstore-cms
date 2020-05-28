@@ -104,8 +104,9 @@ body {
   color: #ffffff;
 }
 
-.BooksForm form {
+.BooksForm {
   margin: auto;
+  width: 90%;
 }
 
 h5 {
