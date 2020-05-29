@@ -1,21 +1,148 @@
 body {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f6fa ;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.App {
+  width: 80%;
+  margin: 3rem auto;
+  background-color: #fafafa;;
+  box-shadow: 20px 18px 22px 28px #00000029;
 }
 
-.BooksForm {
-  padding: 15px;
+.nav-app {
+  background-color: #fff;
+  padding: 2rem 1rem;
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.nav-title {
+  margin: 5px 30px;
+  width: 240px;
+  height: 37px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #0290ff;
+}
+
+.nav-books {
+  margin: 10px 20px;
+  width: 59px;
+  height: 16px;
+  font-size: 13px;
+  letter-spacing: 1.9px;
+  color: #1212129e;
+  text-align: center;
+  align-self: center;
 }
 
 .selectCategory {
-  margin: 20px;
+  margin: 12px 20px;
+  width: 59px;
+  height: 16px;
+  border-style: none;
+}
+
+.selectCategory  select {
+  font-size: 13px;
+  letter-spacing: 1.9px;
+  color: #1212129e;
+  text-align: center;
+  align-self: center;
+  border-style: none;
+}
+
+
+.container-books {
+  padding: 1.5rem 4rem 1.5rem 1.5rem;
+  display: flex;
+  border: 1px solid  #e8e8e8;
+  border-radius: 4px;
+  width: 90%;
+  margin: 1rem auto;
+  background-color: #ffffff;
+  justify-content: space-between;
+}
+
+.container-booksCategory {
+  color: #888888;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.container-booksTitle {
+  color: #121212;
+  font-family: RobotoSlab,'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.container-removeButton {
+  padding-top: 0.5rem;
+  padding-left: 5rem;
+  border-left: 1.5px solid #e8e8e8;
+}
+
+.container-removeButton button{
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: RobotoSlab,'Montserrat', sans-serif;
+  font-weight: 300;
+  border-radius: 2px;
+  letter-spacing: 1px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #ffffff;
+}
+
+form {
+  padding-bottom: 3em;
+}
+
+.BooksForm {
+  margin: 3rem auto;
+  width: 90%;
+  border-top: 2px solid #e8e8e8;
+}
+
+.BooksForm-title {
+  margin-top: 2rem;
+  width: 174px;
+  height: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -0.18px;
+  color: #888888;
+}
+
+.add-book {
+  width: 184px;
+  border-radius: 3px;
+  background-color: #0290ff;
+}
+
+.form-row div{
+  margin: 5px 10px;
+}
+
+#inputTitle {
+  font-size: 16px;
+  letter-spacing: -0.15px;
+  color: #c4c4c4;
+}
+
+#inputCategory {
+  font-size: 16px;
+  letter-spacing: -0.15px;
+  color: #b5b5b5;
 }
