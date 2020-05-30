@@ -1,68 +1,77 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br />
+<h1 align="center">Redux Project - Bookstore CMS</h1>
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [About the Project](#about-the-project)
+  - [Built With](#built-with)
+- [Run This App](#run-this-app)
+- [License](#license)
+- [Contact](#contact)
 
-### `yarn start`
+## About The Project
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Basic project structure
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- Create a react app with create-react-app;
+- Delete the unnecessary file and assets;
+- Add the prop-types, react-redux end redux;
+- deploy the app to Heroku.
 
-### `yarn test`
+### Components and Redux store
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Prepare the directory structure;
+- Implement the App component;
+- Implement the BooksList component;
+- Implement the Book component;
+- Implement the BooksForm component;
+- Define the Redux actions and reducers;
+- Initialize the Redux store.
 
-### `yarn build`
+### Interactive form
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Make the BooksForm component stateful;
+- Connect the REMOVE_BOOK action to the component.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Category filter
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Enhance the Redux store;
+- Implement the CategoryFilter component;
+- Keep the filter value in the Redux store.
 
-### `yarn eject`
+### Built With
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Node.js
+- React
+- React-DOM
+- React-Create-App
+- Redux
+- npm
+- CSS
+- ES6
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Live Demo
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+[React-Redux Bookstore](https://bookstore-react-cms.herokuapp.com)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Automated tests
 
-## Learn More
+No automated tests for this project have been implemented but it is something that should eventually be added
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Acknowledgements
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [Microverse](https://www.microverse.org/)
+- [React](https://reactjs.org/)
 
-### Code Splitting
+## Show your support
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Give a ⭐️ if you like this project!
 
-### Analyzing the Bundle Size
+## Authors
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+- Felipe Enne - felipeenne@gmail.com | [Github Account https://github.com/FelipeEnne](https://github.com/FelipeEnne)
+- Fabricio Garcia - fabricio.garcia@outlook.com | [Github Account https://github.com/fabricio-garcia](https://github.com/fabricio-garcia)
 
-### Making a Progressive Web App
+## License
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Distributed under the Apache 2.0 License. See `LICENSE` for more information.
